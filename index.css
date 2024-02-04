@@ -1,0 +1,51 @@
+* {
+    color: aliceblue;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#background {
+    background-color: #010129;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-section {
+    height: auto;
+    width: 70%;
+    border: 2px solid white;
+}
+
+.stock-list {
+    height: auto;
+    width: 28%;
+    border: 2px solid white;
+}
+
+.detail {
+    height: auto;
+    width: 70%;
+    border: 2px solid white;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.detail div {
+    margin-left: 10px;
+}
+
+button {
+    color: black;
+    cursor: pointer;
+}
+
+.range-button {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body id="background">
+    <main>
+        <h1 class="center-text">Stock Market Analysis</h1>
+    </main>
+    <div class="top-section">
+        <section id="chart" class="graph-section">
+            <h2 id="comp-curr" style="margin-left: 10px;"></h2>
+            <canvas id="my-chart" width="400" height="200"></canvas>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 5px;">
+                <span>Min:<span id="min"></span></span>
+                <span>Max:<span id="max"></span></span>
+
+                <div class="range-button" id="date-range">
+                </div>
+            </div>
+        </section>
+        <section id="list" class="stock-list">
+            <div>
+                <h3 class="center-text">All Stocks</h3>
+                <div>
+                    <ul id="all-stocks"></ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="detail">
+        <div>
+            <div style="display: flex; align-items: center;">
+                <span>
+                    <h3 id="stock-name"></h3>
+                </span>
+                <span id="stock-profit"></span>
+                <span id="stock-value"></span>
+            </div>
+            <div class="stock-description"></div>
+        </div>
+    </section>
+    <script src="/setColor.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
